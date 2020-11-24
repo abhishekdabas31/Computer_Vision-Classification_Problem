@@ -64,9 +64,9 @@ It is an similar to regularization steps, which are used to make a model more ro
     - Randomly flipping half of the images horizontally using the **horizontal_flip parameter**. 
     - Leveraging the **fill_mode** parameter to fill in new pixels for images after we apply any of the preceding operations (especially rotation or translation). 
 - Example: [image augmentation with Keras](https://keras.io/api/preprocessing/image/)
-```train_datagen = ImageDataGenerator(rescale=1./255, zoom_range=0.3, rotation_range=50,
+""train_datagen = ImageDataGenerator(rescale=1./255, zoom_range=0.3, rotation_range=50,
                                     width_shift_range=0.2, height_shift_range=0.2, shear_range=0.2, 
-                                    horizontal_flip=True, fill_mode=’nearest’)```
+                                    horizontal_flip=True, fill_mode=’nearest’)""
 
 1. **Callback**:
 - History Callback: It remembers and records training metrics for each epoch. It includes the loss and the accuracy (for classification problems) as well as the loss and accuracy for the validation dataset.
